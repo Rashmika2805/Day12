@@ -165,6 +165,14 @@ class Tables extends React.Component{
                       return <b>{text}</b>
                     }
                 },
+                {
+                  title:'Century',
+                  key:'key',
+                  render:payload =>{
+                    return <p>{payload.year>2000?'21sth century':'20th century'}</p>
+                  }
+
+                },
               ]
         }
     }
