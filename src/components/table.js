@@ -169,7 +169,7 @@ class Tables extends React.Component{
                   title:'Century',
                   key:'key',
                   render:payload =>{
-                    return <p>{payload.year>2000?'21sth century':'20th century'}</p>
+                    return <p>{payload.year>2000?'21th century':'20th century'}</p>
                   }
 
                 },
@@ -182,12 +182,16 @@ class Tables extends React.Component{
     render(){
         const {columns,data}=this.state;
         return(
+          <div>
+          <h3 style={{color:"red",fontSize:"30px",paddingLeft:"325px",marginTop:"5px",marginBottom:"30px"}}><u>MY FAVORITE COLLECTION OF BOOKS</u> </h3>
             <Table 
                 columns={columns}
                 dataSource={data}
                 pagination={false}
               
             />
+            </div> 
+            
         )
     }
 }
